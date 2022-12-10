@@ -4,15 +4,14 @@ object Form1: TForm1
   Top = 228
   Width = 777
   Caption = 'ZPL-View'
-  ClientHeight = 680
+  ClientHeight = 700
   ClientWidth = 777
   Menu = MainMenu1
   OnClose = FormClose
   OnCreate = FormCreate
-  LCLVersion = '2.0.6.0'
   object Image1: TImage
     Left = 0
-    Height = 657
+    Height = 678
     Top = 0
     Width = 627
     Align = alClient
@@ -26,8 +25,8 @@ object Form1: TForm1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 23
-    Top = 657
+    Height = 22
+    Top = 678
     Width = 777
     Panels = <    
       item
@@ -41,7 +40,7 @@ object Form1: TForm1
         Width = 100
       end    
       item
-        Width = 50
+        Width = 250
       end>
     SimplePanel = False
     OnClick = StatusBar1Click
@@ -59,16 +58,16 @@ object Form1: TForm1
   end
   object Panel1: TPanel
     Left = 627
-    Height = 657
+    Height = 678
     Top = 0
     Width = 150
     Align = alRight
-    ClientHeight = 657
+    ClientHeight = 678
     ClientWidth = 150
     TabOrder = 1
     object MSourceCode: TMemo
       Left = 16
-      Height = 655
+      Height = 676
       Top = 1
       Width = 133
       Align = alClient
@@ -77,16 +76,16 @@ object Form1: TForm1
     object BRenderManual: TButton
       Left = 97
       Height = 25
-      Top = 630
+      Top = 651
       Width = 51
       Anchors = [akRight, akBottom]
-      Caption = 'Render'
+      Caption = '渲染'
       OnClick = BRenderManualClick
       TabOrder = 2
     end
     object Panel2: TPanel
       Left = 1
-      Height = 655
+      Height = 676
       Top = 1
       Width = 15
       Align = alLeft
@@ -95,15 +94,16 @@ object Form1: TForm1
     end
   end
   object MainMenu1: TMainMenu
-    left = 32
+    Left = 40
+    Top = 24
     object MenuItem1: TMenuItem
-      Caption = 'Datei'
+      Caption = '文件'
       object MenuItem2: TMenuItem
-        Caption = 'Einstellungen'
+        Caption = '设置'
         OnClick = MenuItem2Click
       end
       object MenuItem3: TMenuItem
-        Caption = 'Ende'
+        Caption = '结束'
         OnClick = MenuItem3Click
       end
     end
@@ -111,7 +111,7 @@ object Form1: TForm1
   object AcceptTimer: TTimer
     Interval = 150
     OnTimer = AcceptTimerTimer
-    left = 64
-    top = 8
+    Left = 160
+    Top = 24
   end
 end
